@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignupController">
+   <children>
+      <VBox layoutX="222.0" layoutY="56.0" prefHeight="507.0" prefWidth="603.0" spacing="5.0">
+         <children>
+            <Label text="First name" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow height="37.11" radius="14.0275" spread="0.74" />
+               </effect></Label>
+            <TextField fx:id="firstName" opacity="0.73">
+               <effect>
+                  <DropShadow spread="0.7">
+                     <color>
+                        <Color red="0.025641029700636864" green="0.025641029700636864" blue="0.025641029700636864" />
+                     </color></DropShadow>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></TextField>
+            <Label text="Last name" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow height="37.11" radius="14.0275" spread="0.74" />
+               </effect></Label>
+            <TextField fx:id="lastName" opacity="0.73">
+               <effect>
+                  <DropShadow spread="0.7">
+                     <color>
+                        <Color red="0.025641029700636864" green="0.025641029700636864" blue="0.025641029700636864" />
+                     </color></DropShadow>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></TextField>
+            <Label text="Phone number" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow height="37.11" radius="14.0275" spread="0.74" />
+               </effect></Label>
+            <TextField fx:id="phoneNumber" opacity="0.73" promptText="example: 01*********">
+               <effect>
+                  <DropShadow spread="0.7">
+                     <color>
+                        <Color red="0.025641029700636864" green="0.025641029700636864" blue="0.025641029700636864" />
+                     </color></DropShadow>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></TextField>
+            <Label text="Area" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow height="37.11" radius="14.0275" spread="0.74" />
+               </effect></Label>
+            <ComboBox fx:id="area" prefHeight="25.0" prefWidth="296.0">
+               <effect>
+                  <DropShadow spread="0.7">
+                     <color>
+                        <Color red="0.025641029700636864" green="0.025641029700636864" blue="0.025641029700636864" />
+                     </color></DropShadow>
+               </effect>
+            </ComboBox>
+            <Label text="Address" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow height="37.11" radius="14.0275" spread="0.74" />
+               </effect>
+            </Label>
+            <TextField fx:id="address" opacity="0.73">
+               <effect>
+                  <DropShadow spread="0.7">
+                     <color>
+                        <Color red="0.025641029700636864" green="0.025641029700636864" blue="0.025641029700636864" />
+                     </color></DropShadow>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+            <Label text="User ID" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow height="37.11" radius="14.0275" spread="0.74" />
+               </effect>
+            </Label>
+            <TextField fx:id="userID" onAction="#validateUserID" onKeyReleased="#validateUserID" opacity="0.73">
+               <effect>
+                  <DropShadow spread="0.7">
+                     <color>
+                        <Color red="0.025641029700636864" green="0.025641029700636864" blue="0.025641029700636864" />
+                     </color></DropShadow>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+            <Label text="Password" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow height="37.11" radius="14.0275" spread="0.74" />
+               </effect>
+            </Label>
+            <PasswordField fx:id="password" opacity="0.73">
+               <effect>
+                  <DropShadow spread="0.7">
+                     <color>
+                        <Color red="0.025641029700636864" green="0.025641029700636864" blue="0.025641029700636864" />
+                     </color></DropShadow>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </PasswordField>
+            <Label text="Confirm Password" textFill="#f8f8f8">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow height="37.11" radius="14.0275" spread="0.74" />
+               </effect>
+            </Label>
+            <PasswordField fx:id="confirmPassword" opacity="0.73">
+               <effect>
+                  <DropShadow spread="0.7">
+                     <color>
+                        <Color red="0.025641029700636864" green="0.025641029700636864" blue="0.025641029700636864" />
+                     </color></DropShadow>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </PasswordField>
+         </children>
+         <padding>
+            <Insets left="20.0" right="10.0" />
+         </padding>
+      </VBox>
+      <Button fx:id="registerButton" blendMode="ADD" layoutX="337.0" layoutY="620.0" mnemonicParsing="false" onAction="#RegisterNowFun" prefHeight="46.0" prefWidth="373.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Register " textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="53.21" radius="30.1325" spread="0.4" width="69.32">
+               <color>
+                  <Color red="0.4399999976158142" green="0.550000011920929" blue="0.5153770446777344" />
+               </color>
+            </DropShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="homeButton" blendMode="ADD" layoutX="860.0" layoutY="582.0" mnemonicParsing="false" onAction="#HomeFun" prefHeight="85.0" prefWidth="115.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Home" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="23.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" spread="0.53">
+               <color>
+                  <Color red="0.7120315432548523" green="0.1612146943807602" blue="0.1612146943807602" />
+               </color>
+            </DropShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="done" blendMode="ADD" layoutX="860.0" layoutY="477.0" mnemonicParsing="false" onAction="#DoneFun" prefHeight="85.0" prefWidth="115.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Confirm" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="23.0" />
+         </font>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" spread="0.53">
+               <color>
+                  <Color red="0.3361740708351135" green="0.5345167517662048" blue="0.5345167517662048" />
+               </color>
+            </DropShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView blendMode="ADD" fitHeight="141.0" fitWidth="166.0" layoutX="22.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Logo.png" />
+         </image>
+         <effect>
+            <DropShadow spread="1.0">
+               <color>
+                  <Color red="0.2623274028301239" green="0.19138352572917938" blue="0.19138352572917938" />
+               </color>
+            </DropShadow>
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

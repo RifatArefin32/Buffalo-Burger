@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="homePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: #FFFFFF;" styleClass="homePane" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.homeController">
+   <children>
+      <Button fx:id="signUp" contentDisplay="CENTER" layoutX="933.0" layoutY="25.0" minHeight="25.0" minWidth="27.0" mnemonicParsing="false" onAction="#SignUpPage" prefHeight="43.0" prefWidth="46.0" style="-fx-background-radius: 100; -fx-background-color: #E5E7E9;" styleClass="signUp" stylesheets="@../buttonStyle.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="12.0" radius="5.5" spread="1.0" width="12.0">
+               <color>
+                  <Color red="0.10664188116788864" green="0.5345167517662048" blue="0.09188757836818695" />
+               </color></DropShadow>
+         </effect></Button>
+      <VBox layoutX="562.0" layoutY="230.0" prefHeight="160.0" prefWidth="418.0" spacing="25.0">
+         <children>
+            <HBox prefHeight="50.0" prefWidth="250.0" spacing="20.0">
+               <children>
+                  <TextField fx:id="userName" alignment="CENTER" blendMode="HARD_LIGHT" prefHeight="53.0" prefWidth="392.0" promptText="Enter Username" style="-fx-background-radius: 100;">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="36.0" />
+                     </font>
+                     <effect>
+                        <DropShadow height="50.68" radius="24.802500000000002" spread="0.79" width="50.53">
+                           <color>
+                              <Color red="0.0374753475189209" green="0.0374753475189209" blue="0.0374753475189209" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="250.0" spacing="20.0">
+               <children>
+                  <PasswordField fx:id="password" alignment="CENTER" blendMode="HARD_LIGHT" prefHeight="51.0" prefWidth="395.0" promptText="Enter password" style="-fx-background-radius: 50;">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+                     </font>
+                     <effect>
+                        <DropShadow height="50.68" radius="24.802500000000002" spread="0.79" width="50.53">
+                           <color>
+                              <Color red="0.0374753475189209" green="0.0374753475189209" blue="0.0374753475189209" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </PasswordField>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="30.0" top="20.0" />
+         </padding>
+      </VBox>
+      <Button fx:id="cancelButton" blendMode="HARD_LIGHT" layoutX="392.0" layoutY="648.0" mnemonicParsing="false" onAction="#CancelFunction" prefHeight="37.0" prefWidth="215.0" style="-fx-background-color: #B3B6B7;" text="Cancel">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow spread="0.77">
+               <color>
+                  <Color red="0.1913215070962906" green="0.15803076326847076" blue="0.15803076326847076" />
+               </color></DropShadow>
+         </effect>
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="enter" alignment="CENTER" blendMode="ADD" contentDisplay="CENTER" graphicTextGap="2.0" layoutX="789.0" layoutY="429.0" mnemonicParsing="false" onAction="#LoginFun" prefHeight="77.0" prefWidth="159.0" style="-fx-background-color: #808B96; -fx-border-radius: 20; -fx-background-radius: 20;" text="Enter">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="26.64" radius="12.870000000000001" spread="1.0" width="26.84">
+               <color>
+                  <Color red="0.22682446241378784" green="0.2159191370010376" blue="0.20637696981430054" />
+               </color></DropShadow>
+         </effect>
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="41.0" />
+         </font>
+      </Button>
+      <Label layoutX="619.0" layoutY="34.0" prefHeight="25.0" prefWidth="303.0" text="Don't have any account? please Sign Up" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="155.0" fitWidth="179.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Logo.png" />
+         </image>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" radius="14.0275" spread="0.99" width="37.11" />
+         </effect>
+      </ImageView>
+      <Label fx:id="time" alignment="TOP_LEFT" blendMode="SCREEN" layoutX="14.0" layoutY="176.0" prefHeight="31.0" prefWidth="95.0" text="10:39:56" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="25.0" />
+         </font>
+      </Label>
+      <VBox layoutX="14.0" layoutY="599.0" prefHeight="85.0" prefWidth="303.0" spacing="5.0">
+         <children>
+            <HBox prefHeight="25.0" prefWidth="270.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/phon.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="24.0" prefWidth="242.0" text="01864716970, 01864716969 " textFill="#fff1f1">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" spread="0.62">
+                     <color>
+                        <Color red="0.08481262624263763" green="0.0821455642580986" blue="0.0821455642580986" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </HBox>
+            <HBox prefHeight="22.0" prefWidth="159.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/facebook.jpg" />
+                     </image>
+                     <effect>
+                        <DropShadow spread="0.81">
+                           <color>
+                              <Color red="0.14398422837257385" green="0.04648547247052193" blue="0.04648547247052193" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ImageView>
+                  <Label prefHeight="25.0" prefWidth="141.0" text="Buffalo Burger" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                     <effect>
+                        <DropShadow spread="0.81">
+                           <color>
+                              <Color red="0.025641029700636864" green="0.024942217394709587" blue="0.024942217394709587" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="17.0" prefWidth="272.0" spacing="10.0">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/instagram.jpg" />
+                     </image>
+                     <effect>
+                        <DropShadow spread="0.84" />
+                     </effect>
+                  </ImageView>
+                  <Label prefHeight="25.0" prefWidth="141.0" text="buffaloburger_117BD" textFill="#fff1f1">
+                     <font>
+                        <Font name="Berlin Sans FB" size="16.0" />
+                     </font>
+                     <effect>
+                        <DropShadow spread="0.84" />
+                     </effect>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+         <effect>
+            <DropShadow spread="0.41" />
+         </effect>
+      </VBox>
+      <Label layoutX="14.0" layoutY="567.0" text="Contact with us :" textFill="#fffafa">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.42" />
+         </effect>
+      </Label>
+      <Label fx:id="date" alignment="TOP_LEFT" blendMode="SCREEN" layoutX="89.0" layoutY="202.0" opacity="0.53" prefHeight="19.0" prefWidth="86.0" text="06/06/2021" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="18.0" />
+         </font>
+      </Label>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

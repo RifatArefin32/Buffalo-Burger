@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="juicePage" prefHeight="700.0" prefWidth="1000.0" styleClass="juicePage" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.JuicePageController">
+   <children>
+      <Button fx:id="homeButton" layoutX="814.0" layoutY="640.0" mnemonicParsing="false" onAction="#HomeFun" prefHeight="25.0" prefWidth="164.0" text="Go to menu">
+         <effect>
+            <DropShadow spread="0.68" />
+         </effect>
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="71.0" fitWidth="88.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Logo.png" />
+         </image>
+         <effect>
+            <DropShadow spread="0.89" />
+         </effect>
+      </ImageView>
+      <Button layoutX="593.0" layoutY="313.0" mnemonicParsing="false" onAction="#jc1" prefHeight="154.0" prefWidth="102.0" style="-fx-background-radius: 50;" styleClass="cocacola" stylesheets="@../buttonStyle.css">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" spread="0.86" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="593.0" layoutY="512.0" mnemonicParsing="false" onAction="#jc3" prefHeight="163.0" prefWidth="165.0" style="-fx-background-radius: 50;" styleClass="sevenup" stylesheets="@../buttonStyle.css">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" spread="0.86" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="392.0" layoutY="235.0" mnemonicParsing="false" onAction="#jc2" prefHeight="155.0" prefWidth="138.0" style="-fx-background-radius: 50;" styleClass="mirinda" stylesheets="@../buttonStyle.css">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" spread="0.86" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="128.0" layoutY="35.0" mnemonicParsing="false" onAction="#jc10" prefHeight="238.0" prefWidth="234.0" style="-fx-background-radius: 50;" styleClass="strawberry" stylesheets="@../buttonStyle.css">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" spread="0.86" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="334.0" layoutY="439.0" mnemonicParsing="false" onAction="#jc8" prefHeight="163.0" prefWidth="196.0" style="-fx-background-radius: 50;" styleClass="oreo" stylesheets="@../buttonStyle.css">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" spread="0.86" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="607.0" layoutY="25.0" mnemonicParsing="false" onAction="#jc9" prefHeight="257.0" prefWidth="194.0" style="-fx-background-radius: 50;" styleClass="kitkat" stylesheets="@../buttonStyle.css">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" spread="0.86" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="39.0" layoutY="343.0" mnemonicParsing="false" onAction="#jc7" prefHeight="208.0" prefWidth="253.0" style="-fx-background-radius: 50;" styleClass="watermelon" stylesheets="@../buttonStyle.css">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" spread="0.86" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="834.0" layoutY="55.0" mnemonicParsing="false" onAction="#jc5" prefHeight="216.0" prefWidth="139.0" style="-fx-background-radius: 50;" styleClass="mango" stylesheets="@../buttonStyle.css">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" spread="0.86" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="412.0" layoutY="57.0" mnemonicParsing="false" onAction="#jc4" prefHeight="123.0" prefWidth="139.0" style="-fx-background-radius: 50;" styleClass="orange" stylesheets="@../buttonStyle.css">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" spread="0.86" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="743.0" layoutY="321.0" mnemonicParsing="false" onAction="#jc6" prefHeight="139.0" prefWidth="235.0" style="-fx-background-radius: 50;" styleClass="lemonMint" stylesheets="@../buttonStyle.css">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" spread="0.86" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

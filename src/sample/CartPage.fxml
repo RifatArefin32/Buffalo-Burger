@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cartPage" prefHeight="700.0" prefWidth="1000.0" styleClass="cartPage" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CartPageController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="197.0" layoutX="28.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Logo.png" />
+         </image>
+         <effect>
+            <DropShadow spread="0.92" />
+         </effect>
+      </ImageView>
+      <AnchorPane layoutX="234.0" layoutY="15.0" prefHeight="168.0" prefWidth="742.0" style="-fx-background-color: #273746; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" spread="0.76" />
+         </effect>
+         <children>
+            <VBox layoutX="-2.0" layoutY="14.0" prefHeight="141.0" prefWidth="608.0" spacing="5.0">
+               <children>
+                  <HBox prefHeight="22.0" prefWidth="538.0">
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="120.0" text="Name " textFill="WHITE">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Name" prefHeight="22.0" prefWidth="485.0" text="FirstName" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="22.0" prefWidth="538.0">
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="120.0" text="Phone No." textFill="WHITE">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="PhoneNo" prefHeight="22.0" prefWidth="485.0" text="PhoneNo" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="22.0" prefWidth="538.0">
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="120.0" text="Area" textFill="WHITE">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Area" prefHeight="22.0" prefWidth="486.0" text="Area" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="22.0" prefWidth="538.0">
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="120.0" text="Address" textFill="WHITE">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Address" alignment="TOP_LEFT" prefHeight="22.0" prefWidth="486.0" text="Address" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="23.0" prefWidth="605.0">
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="120.0" text="Bill ID" textFill="WHITE">
+                           <font>
+                              <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="BillID" prefHeight="23.0" prefWidth="485.0" text="BillID" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets left="10.0" top="5.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableView" layoutX="355.0" layoutY="219.0" prefHeight="341.0" prefWidth="624.0" style="-fx-background-color: #273746; -fx-background-radius: 0;">
+        <columns>
+          <TableColumn fx:id="nameOfItems" prefWidth="214.64151000976562" text="Name of items" />
+          <TableColumn fx:id="quantity" minWidth="0.0" prefWidth="106.867919921875" text="Quantity" />
+            <TableColumn fx:id="unitPrice" prefWidth="123.1697998046875" text="Unit Price" />
+            <TableColumn fx:id="netPrice" prefWidth="173.8868408203125" text="Net Price" />
+        </columns>
+         <effect>
+            <DropShadow spread="0.63" />
+         </effect>
+      </TableView>
+      <Button fx:id="HomePageButton" blendMode="SRC_ATOP" layoutX="382.0" layoutY="642.0" mnemonicParsing="false" onAction="#HomeFun" prefHeight="43.0" prefWidth="369.0" style="-fx-background-color: #2E4053; -fx-background-radius: 100;" text="Confirm Order" textFill="#fffdfd" underline="true">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="22.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.77">
+               <color>
+                  <Color red="0.01380671001970768" green="0.01380671001970768" blue="0.01380671001970768" />
+               </color>
+            </DropShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="netCost" alignment="TOP_RIGHT" layoutX="527.0" layoutY="577.0" prefHeight="43.0" prefWidth="450.0" text="Label" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="CancelButton" layoutX="848.0" layoutY="642.0" mnemonicParsing="false" onAction="#CancelFun" prefHeight="43.0" prefWidth="128.0" style="-fx-background-radius: 100;" text="Cancel Order">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.34" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="MenuButton" layoutX="762.0" layoutY="642.0" mnemonicParsing="false" onAction="#MenuFun" prefHeight="43.0" prefWidth="77.0" style="-fx-background-radius: 100;" text="Menu">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow spread="0.34" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <AnchorPane layoutX="28.0" layoutY="219.0" prefHeight="460.0" prefWidth="303.0" style="-fx-background-color: #273746; -fx-background-radius: 20;">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" spread="0.76" />
+         </effect>
+         <children>
+            <Label layoutX="20.0" layoutY="7.0" prefHeight="48.0" prefWidth="246.0" text="Payment Method" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="30.0" />
+               </font>
+               <effect>
+                  <DropShadow spread="0.46" />
+               </effect>
+            </Label>
+            <VBox layoutX="21.0" layoutY="55.0" prefHeight="294.0" prefWidth="261.0">
+               <children>
+                  <HBox prefHeight="104.0" prefWidth="260.0" spacing="20.0">
+                     <children>
+                        <Button fx:id="cod" mnemonicParsing="false" onAction="#CODFun" prefHeight="84.0" prefWidth="120.0" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="cod" stylesheets="@../buttonStyle.css">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <DropShadow spread="0.16" />
+                           </effect></Button>
+                        <Button fx:id="bkash" mnemonicParsing="false" onAction="#BkashFun" prefHeight="84.0" prefWidth="120.0" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="bkash" stylesheets="@../buttonStyle.css">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <DropShadow spread="0.16" />
+                           </effect></Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="104.0" prefWidth="260.0" spacing="20.0">
+                     <children>
+                        <Button fx:id="rocket" mnemonicParsing="false" onAction="#RocketFun" prefHeight="84.0" prefWidth="120.0" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="rocket" stylesheets="@../buttonStyle.css">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <DropShadow spread="0.16" />
+                           </effect></Button>
+                        <Button fx:id="nagad" mnemonicParsing="false" onAction="#NagadFun" prefHeight="84.0" prefWidth="120.0" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="nagad" stylesheets="@../buttonStyle.css">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <DropShadow spread="0.16" />
+                           </effect></Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox prefHeight="104.0" prefWidth="261.0" spacing="20.0">
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <children>
+                        <Button fx:id="visa" mnemonicParsing="false" onAction="#VisaFun" prefHeight="84.0" prefWidth="120.0" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="visa" stylesheets="@../buttonStyle.css">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <DropShadow spread="0.16" />
+                           </effect></Button>
+                        <Button fx:id="master" mnemonicParsing="false" onAction="#MasterFun" prefHeight="84.0" prefWidth="120.0" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="mastercard" stylesheets="@../buttonStyle.css">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <DropShadow spread="0.16" />
+                           </effect></Button>
+                     </children>
+                  </HBox>
+               </children></VBox>
+            <ImageView fitHeight="46.0" fitWidth="118.0" layoutX="113.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/freedeli1.png" />
+               </image>
+               <effect>
+                  <DropShadow height="42.47" radius="16.0375" spread="0.75" width="23.68">
+                     <color>
+                        <Color red="0.108481265604496" green="0.10198073089122772" blue="0.10052142292261124" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>

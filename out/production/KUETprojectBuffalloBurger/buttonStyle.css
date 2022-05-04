@@ -1,0 +1,270 @@
+.signUp  {
+    -fx-background-image: url("image/signUpIcon.png");
+    -fx-background-size: 30px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.burger1{
+-fx-background-image: url("image/1.naga.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.burger2{
+-fx-background-image: url("image/2.bbq.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.burger3{
+-fx-background-image: url("image/3.burger.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.burger4{
+-fx-background-image: url("image/4.burger.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.burger5{
+-fx-background-image: url("image/5.burger.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.burger6{
+-fx-background-image: url("image/6.burger.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.burger7{
+-fx-background-image: url("image/7.burger.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.burger8{
+-fx-background-image: url("image/8.burger.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.addToCart{
+    -fx-background-image: url("image/cart1.jpg");
+    -fx-background-size: 60px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.Cart{
+    -fx-background-image: url("image/Cart2.jpg");
+    -fx-background-size: 40px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.sevenup{
+    -fx-background-image: url("image/7up.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.cocacola{
+    -fx-background-image: url("image/cocacola.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.mirinda{
+    -fx-background-image: url("image/mirinda.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.lemonMint{
+    -fx-background-image: url("image/lemonMint.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.orange{
+    -fx-background-image: url("image/orange.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.mango{
+    -fx-background-image: url("image/mango.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.watermelon{
+    -fx-background-image: url("image/watermelon.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.oreo{
+    -fx-background-image: url("image/oreomilkshake.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.kitkat{
+    -fx-background-image: url("image/kitkatmilkshake.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.strawberry{
+    -fx-background-image: url("image/StrawberryMilkshake.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.expresso{
+    -fx-background-image: url("image/expresso.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.americano{
+    -fx-background-image: url("image/americano.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: left;
+}
+.whitelatte{
+    -fx-background-image: url("image/whitemocha.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.cappuccino{
+    -fx-background-image: url("image/Cappuccino.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.cafemocha{
+    -fx-background-image: url("image/cafemocha.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+
+.adminOrder{
+    -fx-background-image: url("image/order.png");
+    -fx-background-size: 230px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.adminSettings{
+    -fx-background-image: url("image/settings.png");
+    -fx-background-size: 235px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.adminMoney{
+    -fx-background-image: url("image/money.png");
+    -fx-background-size: 150px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.home{
+    -fx-background-image: url("image/home.png");
+    -fx-background-size: 40px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.menu{
+    -fx-background-image: url("image/menu.png");
+    -fx-background-size: 40px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.tableSelect{
+    -fx-background-image: url("image/adminSelect.jpg");
+    -fx-background-size: 30px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.tableDelete{
+    -fx-background-image: url("image/admindelete.png");
+    -fx-background-size: 30px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.back{
+    -fx-background-image: url("image/back.png");
+    -fx-background-size: 37px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.bkash{
+    -fx-background-image: url("image/bkash.png");
+    -fx-background-size: 100px
+    ;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.rocket{
+    -fx-background-image: url("image/rocket.png");
+    -fx-background-size: 120px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.nagad{
+    -fx-background-image: url("image/nagad.jpg");
+    -fx-background-size: 100px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.visa{
+    -fx-background-image: url("image/visa.jpg");
+    -fx-background-size: 110px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.mastercard{
+    -fx-background-image: url("image/masstercard.png");
+    -fx-background-size: 110px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.cod{
+    -fx-background-image: url("image/cod.jpg");
+    -fx-background-size: 80px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+
+.burgicon{
+    -fx-background-image: url("image/burgericon.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.drinkicon{
+    -fx-background-image: url("image/drinkicon.png");
+    -fx-background-size: 195px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.cofficon{
+    -fx-background-image: url("image/coffeeicon.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
