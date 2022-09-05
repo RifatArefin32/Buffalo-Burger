@@ -5,5 +5,5 @@ Buffalo-Burger is a project based on JavaFx. This is a type of cloud restaurent 
 Youtube Link: https://www.youtube.com/watch?v=EPg4t5Ljmo0&t=374s
 <br>
 <br>
-Rifat Arefin <br>
-CSE, KUET.
+<a href="https://github.com/RIfatArefin32">Rifat Arefin</a><br>
+<a href="https://www.kuet.ac.bd/department/CSE/">CSE, KUET.</a>
